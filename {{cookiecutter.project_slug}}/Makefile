@@ -42,7 +42,6 @@ smoke_test: check_env
 
 
 install_hooks:
-	setopt globstar
 	@ scripts/install_hooks.sh
 
 
