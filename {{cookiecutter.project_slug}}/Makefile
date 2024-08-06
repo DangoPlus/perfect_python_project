@@ -1,4 +1,4 @@
-SHELL := /usr/bin/env zsh -O globstar
+SHELL := /usr/bin/env zsh
 
 
 run: check_env
@@ -42,6 +42,7 @@ smoke_test: check_env
 
 
 install_hooks:
+	setopt globstar
 	@ scripts/install_hooks.sh
 
 
